@@ -1,0 +1,9 @@
+package com.AidenMods.CreativeTabs;
+
+public class MCreativeTabs {
+	public static void initialiseTabs(){
+		
+		
+	}
+	
+}

@@ -1,0 +1,30 @@
+package com.AidenMods.Main;
+
+import com.AidenMods.Block.MBlocks;
+import com.AidenMods.Item.MItems;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.init.Blocks;
+import net.minecraft.item.ItemStack;
+
+public class CraftingManagers {
+	public static void mainRegistry(){
+		addCraftingRecipe();
+		addSmeltingRecipe();
+		
+	}
+	
+	public static void addCraftingRecipe(){
+		//Shaped
+		GameRegistry.addRecipe(new ItemStack(MBlocks.ComStone, 1), new Object[]{"XXX","XXX","XXX", 'X', Blocks.stone});
+		
+		//Shapeless
+		GameRegistry.addRecipe(new ItemStack(MItems.oStick, 2), new Object[]{" X ", " X ", 'X', Blocks.obsidian});
+	}
+	
+	public static void addSmeltingRecipe(){
+		//Smelting
+		
+	}
+	
+}

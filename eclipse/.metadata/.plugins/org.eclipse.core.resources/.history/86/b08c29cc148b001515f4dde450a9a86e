@@ -1,0 +1,14 @@
+package com.AidenMods.CreativeTabs;
+
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class CreativeTabItem extends CreativeTabs {
+
+	@Override
+	public Item getTabIconItem() {
+		
+		return null;
+	}
+
+}

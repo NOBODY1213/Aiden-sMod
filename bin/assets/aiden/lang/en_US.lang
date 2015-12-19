@@ -1,0 +1,27 @@
+item.oStick.name=Obsidian Stick
+
+item.oShardItem.name=Obsidian Shard
+item.oSeed.name=Obsidian Seed
+
+item.oPick.name=Obsidian Pickaxe
+item.oAxe.name=Obsidian Axe
+item.oSpade.name=Obsidian Spade
+item.oSword.name=Obsidian Sword
+item.oHoe.name=Obsidian Hoe
+
+item.oHelmet.name=Obsidian Helmet
+item.oChest.name=Obsidian Chestplate
+item.oPants.name=Obsidian Leggings
+item.oBoots.name=Obsidian Boots
+
+item.Grenade.name=Grenade
+
+entity.Grenade.name=Grenade
+
+tile.ComStone.name=Compressed Stone
+tile.WormStone.name=Worm Stone
+
+itemGroup.BlockTab=Aidens Block Tab
+itemGroup.ItemTab=Aidens Item Tab
+itemGroup.ToolTab=Aidens Tool Tab
+itemGroup.CombatTab=Aidens Combat Tab

@@ -1,0 +1,39 @@
+package com.AidenMods.Main;
+
+import com.AidenMods.Block.MBlocks;
+import com.AidenMods.CreativeTabs.MCreativeTabs;
+import com.AidenMods.Item.MItems;
+import com.AidenMods.lib.RefStrings;
+import com.AidenMods.world.MWorld;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraft.item.crafting.CraftingManager;
+
+@Mod(modid = RefStrings.MODID , name = RefStrings.NAME , version = RefStrings.VERSION)
+public class MainRegistry {
+	
+	@SidedProxy(clientSide = RefStrings.CLIENTSIDE, serverSide = RefStrings.SERVERSIDE)
+	public static ServerProxy proxy;
+	@EventHandler
+	public static void PreLoad(FMLPreInitializationEvent PreEvent){
+		proxy.registerRenderInfo();
+		MCreativeTabs.initialiseTabs();
+		MItems.mainRegestry();
+		MBlocks.mainRegestry();
+		CraftingManagers.mainRegistry();
+		MWorld.mainRegistry();
+	}
+	@EventHandler
+	public static void load(FMLInitializationEvent event){
+		
+	}
+	@EventHandler
+	public static void PostLoad(FMLPostInitializationEvent PostEvent){
+		
+	}
+}

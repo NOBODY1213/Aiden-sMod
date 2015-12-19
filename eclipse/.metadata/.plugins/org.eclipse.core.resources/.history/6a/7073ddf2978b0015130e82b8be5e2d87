@@ -1,0 +1,35 @@
+package com.AidenMods.Item;
+
+import com.AidenMods.CreativeTabs.MCreativeTabs;
+import com.AidenMods.lib.RefStrings;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
+
+public class MItems {
+
+	public static void mainRegestry(){
+		initilizeItem();
+		registerItem();
+	};
+	
+	public static Item oStick;
+	
+	public static Item oPick;
+	public static Item oAxe;
+	public static Item oSpade;
+	public static Item oSword;
+	public static Item oHoe;
+	
+	public static void initilizeItem(){
+		oStick = new Item().setUnlocalizedName("oStick").setCreativeTab(MCreativeTabs.tabItems).setTextureName(RefStrings.MODID + ":oStick");
+		//oPick = new OPick(oShard).setUnlocalizedName("oPick").setCreativeTab(MCreativeTabs.tabTools).setTextureName(RefStrings.MODID + ":oPick")
+		
+	};
+	
+	public static void registerItem(){
+		GameRegistry.registerItem(oStick, oStick.getUnlocalizedName());
+		
+	}
+}
